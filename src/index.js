@@ -8,3 +8,9 @@ export {
   List,
   Input
 };
+
+export default {
+  Button, 
+  List,
+  Input
+};
