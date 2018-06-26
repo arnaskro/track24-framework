@@ -16,13 +16,13 @@ describe('Button', () => {
   })
 
   it('renders the component', () => {
-    render(<Button text="Button text" callback={() => {}}/>, node, () => {
+    render(<Button text='Button text' callback={() => {}}/>, node, () => {
       expect(node.innerHTML).toContain('Button text')
     })
   })
 
   it('accepts text prop', () => {
-    render(<Button text="Button text" callback={() => {}}/>, node, () => {
+    render(<Button text='Button text' callback={() => {}}/>, node, () => {
       expect(node.innerHTML).toContain('Button text')
     })
   })

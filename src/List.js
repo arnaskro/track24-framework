@@ -6,7 +6,7 @@ class List extends Component {
         const list = this.props.items.map((item, index) => <li key={index}>{item}</li>);
 
         return (
-            <ul className="List">
+            <ul className='List'>
                 {list}
             </ul>
         )
