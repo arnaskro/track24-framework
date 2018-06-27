@@ -1,16 +1,8 @@
-import './styles/index.css'
+import './index.css'
 import Button from './Button';
-import List from './List';
 import Input from './Input';
 
-export {
-  Button, 
-  List,
-  Input
-};
-
 export default {
-  Button, 
-  List,
+  Button,
   Input
 };

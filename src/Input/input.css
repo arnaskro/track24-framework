@@ -1,0 +1,19 @@
+.input {
+    padding: 5px 10px;
+    height: 24px;
+    width: 50%;
+    font-size: 14px;
+    border:1px solid #eeeeee;
+    border-radius: 3px;
+    background-color: #FAFAFA;
+}
+
+.input--active {
+    border-color:#38ACC9;
+    color:#38ACC9;
+}
+
+.input--error {
+    border-color: #F23D39;
+    color:#F23D39; 
+}

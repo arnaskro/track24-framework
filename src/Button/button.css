@@ -1,0 +1,41 @@
+.button {
+    background-color: #38ACC9;
+    appearance: none;
+    border:0;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    color:#FFFFFF;
+    text-align:center;
+    padding: 10px;
+    vertical-align: center;
+    letter-spacing: 0.6px;
+}
+
+.button--primary {
+    background-color:#38ACC9;
+}
+
+.button--secondary {
+    background-color:#2C8599;
+}
+
+.button--disabled {
+    background-color: #CECFD2;
+    cursor: none;
+}
+
+.button--info {
+    background-color: #1085F5;
+}
+
+.button--warning {
+    background-color: #F2B911;
+}
+
+.button--link {
+    background-color: none;
+    text-decoration: none;
+    color:  #1085F5;
+}
