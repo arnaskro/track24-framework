@@ -1,7 +1,7 @@
 {
   "name": "track24-framework",
-  "version": "1.1.2",
-  "description": "Track24 Frawework",
+  "version": "1.1.3",
+  "description": "Track24 Framework",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -17,13 +17,17 @@
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server",
-    "release": "npm run build && np"
+    "release": "npm run build && np",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook-export": "build-storybook -c .storybook -o .out"
   },
   "dependencies": {},
   "peerDependencies": {
     "react": "16.x"
   },
   "devDependencies": {
+    "@storybook/addon-knobs": "^3.4.8",
+    "@storybook/react": "^3.4.8",
     "np": "^3.0.4",
     "nwb": "0.21.x",
     "prop-types": "^15.6.2",
@@ -36,6 +40,6 @@
   "repository": "",
   "keywords": [
     "track24",
-    "framwork"
+    "framework"
   ]
 }
