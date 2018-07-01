@@ -11,7 +11,9 @@
     "umd"
   ],
   "scripts": {
-    "build": "nwb build-react-component",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "build": "nwb build-react-component && build-css",
     "clean": "nwb clean-module && nwb clean-demo",
     "start": "nwb serve-react-demo",
     "test": "nwb test-react",
@@ -21,7 +23,9 @@
     "storybook": "start-storybook -p 9001 -c .storybook",
     "storybook-export": "build-storybook -c .storybook -o docs"
   },
-  "dependencies": {},
+  "dependencies": {
+    "node-sass-chokidar": "^1.3.0"
+  },
   "peerDependencies": {
     "react": "16.x"
   },
