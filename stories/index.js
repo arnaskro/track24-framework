@@ -5,8 +5,10 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean, number,select } from '@storybook/addon-knobs';
 
+import "../src/styles/main.css";
 import Button from '../src/components/Button/index';
 import Input from '../src/components/Input/index';
+import Toast from '../src/components/Toast/index';
 
 
 storiesOf('Button', module)
@@ -39,3 +41,9 @@ storiesOf('Form', module)
         type="text"/>
   ));
 
+storiesOf('Messaging', module)
+.addDecorator(withKnobs)
+.add('Toast - default ', () => (
+  <Toast
+      type = {select("Type",["warning","success","info","default"],"")}/>
+));
