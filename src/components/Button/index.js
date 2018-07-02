@@ -7,7 +7,7 @@ class Button extends Component {
         const Element = this.props.href ? "a" : "button";
         return (
             <Element
-                className={'button' + (this.props.customClass ? `button--${this.props.customClass}` : "")}
+                className={'button ' + (this.props.customClass ? `button--${this.props.customClass}` : "")}
                 onClick={this.props.onClick || (() => {})}
                 href={this.props.href || "#"}
                 disabled={this.props.disabled || false}>

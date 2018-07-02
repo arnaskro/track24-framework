@@ -24,7 +24,7 @@ html {
 /* Copy & Lists */
 p {
   line-height: $leading;
-  margin-top: $leading;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -50,7 +50,7 @@ blockquote {
 h1, h2, h3, h4, h5, h6 {
   /* Change heading typefaces here */
   font-family: $sans-serif;
-  margin-top: $leading;
+  margin-top: 0;
   margin-bottom: 0;
   line-height: $leading;
 }

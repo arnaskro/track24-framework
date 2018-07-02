@@ -9,7 +9,7 @@ html {
 /* Copy & Lists */
 p {
   line-height: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 0;
   margin-bottom: 0; }
 
 ul, ol {
@@ -30,7 +30,7 @@ blockquote {
 h1, h2, h3, h4, h5, h6 {
   /* Change heading typefaces here */
   font-family: "Arimo", Helvetica, Verdana, sans-serif;
-  margin-top: 1.5rem;
+  margin-top: 0;
   margin-bottom: 0;
   line-height: 1.5rem; }
 

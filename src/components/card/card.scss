@@ -1,0 +1,47 @@
+@import "../../styles/colors.scss";
+
+.card {
+    max-width: 350px;
+    min-width: 216px;
+    position: relative;
+    height: auto; 
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(124, 127, 135, 0.2), 0 6px 20px 0 rgba(124, 127, 135, 0.1);
+    padding: 1em;
+    &--basic { }
+
+    &__status {
+        text-align: right;
+    }
+
+    &__alert {
+        margin-top: 1.5rem;
+        &--safety-critical {
+            color: $danger;
+        }
+        &--opertational-critical {
+            color: $warning; 
+        }
+    }
+    &__caption {
+        color: $grey5;
+    }
+
+    &__title {
+        color: $pilg4;
+    }
+
+    &__caption, &__title {
+        text-transform: uppercase;
+        font-size: 17px;
+    }
+    &__description {
+        color: $black1;
+    }
+    &__divider {
+        height: 1px;
+        width: 100%;
+        position: relative;
+        background-color: $grey3;
+    }
+}
