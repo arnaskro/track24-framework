@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === 'production') {
   }
   
   // Lazy load CSS
-  loadCSS(process.env.REACT_APP_CDN + 'framework/main.css');
+  loadCSS(process.env.REACT_APP_CDN + process.env.REACT_APP_REMOTE_FOLDER + '/main.css');
 }
 
 export {
