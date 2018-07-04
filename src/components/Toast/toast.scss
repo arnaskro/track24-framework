@@ -1,12 +1,13 @@
 @import "../../styles/colors.scss";
+@import "../../styles/mixins.scss";
 
 .toast {
     align-items: center;
     border-radius: 0.363636em;
     display: flex;
-    max-width: 630px;
-    max-height: 56px;
-    padding: 0.818182em 1.45455em 0.727273em;
+    max-width: 630px; 
+    max-height: 56px; 
+    padding: 1em;
     width: calc(100vw - 32px);
     background-color: rgba(238, 239, 240, 0.98);
     box-shadow: rgba(238, 239, 240, 0.25) 0 4px 6px;
@@ -15,18 +16,19 @@
         background-color:  rgba(254, 236, 235, 0.98);
         color: $danger;
         box-shadow: rgba(254, 236, 235, 0.25) 0 4px 6px;
+        @include box-shadow(0 4px 6px);
     }
 
     &--success {
         background-color: rgba(236, 249, 242, 0.98);
         color: $success;
-        box-shadow: rgba(136, 189, 231, 0.25) 0 4px 6px;
+        box-shadow: rgba(236, 249, 242, 0.25) 0 4px 6px;
     }
 
     &--info {
         background-color: rgba(235,247,250,0.98);
         color: $info;
-        box-shadow: rgba(235, 247, 250,0.25) 0 4px 6px;
+        box-shadow: rgba(235,247,250,0.25) 0 4px 6px;
     }
     
     &__close-btn {
