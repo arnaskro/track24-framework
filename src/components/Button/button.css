@@ -1,41 +1,53 @@
 .button {
-    background-color: #38ACC9;
-    appearance: none;
-    border:0;
-    border-radius: 0;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 600;
-    color:#FFFFFF;
-    text-align:center;
-    padding: 10px;
-    vertical-align: center;
-    letter-spacing: 0.6px;
-}
-
-.button--primary {
-    background-color:#38ACC9;
-}
-
-.button--secondary {
-    background-color:#2C8599;
-}
-
-.button--disabled {
+  background-color: #38ACC9;
+  appearance: none;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  vertical-align: center;
+  letter-spacing: 0.6px;
+  padding: .8em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 0 10px; }
+  .button:hover {
+    transform: translateY(-1px); }
+  .button--primary {
+    background-color: #38ACC9; }
+    .button--primary:hover {
+      background-color: #60bdd4; }
+  .button--secondary {
+    background-color: #2C8599; }
+    .button--secondary:hover {
+      background-color: #37a7c1; }
+  .button--success {
+    background-color: #3BC47A; }
+    .button--success:hover {
+      background-color: #62d095; }
+  .button--disabled {
     background-color: #CECFD2;
-    cursor: none;
-}
-
-.button--info {
-    background-color: #1085F5;
-}
-
-.button--warning {
-    background-color: #F2B911;
-}
-
-.button--link {
+    cursor: not-allowed; }
+  .button--info {
+    background-color: #1085F5; }
+    .button--info:hover {
+      background-color: #419ef7; }
+  .button--emergency {
+    background-color: #F23D39; }
+    .button--emergency:hover {
+      background-color: #f56c69; }
+  .button--warning {
+    background-color: #F2B911; }
+    .button--warning:hover {
+      background-color: #f5c741; }
+  .button--link {
     background-color: none;
     text-decoration: none;
-    color:  #1085F5;
-}
+    color: #1085F5; }
