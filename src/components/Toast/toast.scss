@@ -16,8 +16,7 @@
         background-color:  rgba(254, 236, 235, 0.98);
         color: $danger;
         box-shadow: rgba(254, 236, 235, 0.25) 0 4px 6px;
-        @include box-shadow(0 4px 6px);
-    }
+     }
 
     &--success {
         background-color: rgba(236, 249, 242, 0.98);
