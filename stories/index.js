@@ -25,10 +25,10 @@ storiesOf('Button', module)
   ))
   .add('Primary Button', () => (
     <Button
-        customClass={select("Color", ["warning", "secondary", "primary", "disabled", "transparent"], "primary")}
+        customClass={select("Color", ["primary", "secondary", "warning","emergency","info","success", "disabled"], "primary")}
         disabled={boolean("Disabled", false)}
         onClick={action("clicked")}
-        text="Hello Button">
+        text={text("Label","Register")}>
       </Button>
   ));
 
